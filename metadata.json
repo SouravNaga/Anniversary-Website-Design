@@ -1,0 +1,6 @@
+{
+  "name": "Love Memories Hub",
+  "description": "A beautiful interactive digital memory book and workspace for couples to celebrate milestones, share a bucket list, build a visual timeline, and generate personalized love letters using AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
