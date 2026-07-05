@@ -40,7 +40,7 @@ export default function HeroSection({ onScrollTo, isLight }: HeroSectionProps) {
           </h1>
 
           <p className={`text-sm sm:text-base max-w-xl mx-auto leading-relaxed ${isLight ? 'text-gray-600' : 'text-gray-400'}`}>
-            From a nervous coffee date in 2021 to building a beautiful home together in 2026. Explore our digital time capsule containing five years of magical memories.
+            From her college senior to her forever person — a journey written by fate, filled with love, and cherished through every moment since 2021. ❤️✨
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">

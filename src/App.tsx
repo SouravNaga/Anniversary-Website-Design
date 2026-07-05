@@ -35,7 +35,7 @@ import ZipExporter from './components/ZipExporter';
 const DEFAULT_CONFIG: LoveConfig = {
   partner1: 'Sourav',
   partner2: 'Atri',
-  anniversaryDate: '2021-07-04', // 5 Years Anniversary in July 2026!
+  anniversaryDate: '2021-07-21', // 5 Years Anniversary in July 2026!
 };
 
 export default function App() {
@@ -135,7 +135,7 @@ export default function App() {
               <Heart className={`w-5 h-5 fill-current animate-heartPulse`} />
             </div>
             <span className="font-serif text-base sm:text-lg font-bold tracking-tight">
-              {config.partner1} & {config.partner2} Hub
+              {config.partner1} & {config.partner2}
             </span>
           </div>
 

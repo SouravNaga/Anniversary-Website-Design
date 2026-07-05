@@ -72,7 +72,7 @@ export default function SocialFeed({ isLight }: SocialFeedProps) {
   const handleShare = (postCaption: string) => {
     if (navigator.share) {
       navigator.share({
-        title: 'Ekta & Amit Memory Feed',
+        title: 'Sourav & Atri Memory Feed',
         text: postCaption,
         url: window.location.href,
       }).catch(err => console.log(err));
@@ -122,7 +122,7 @@ export default function SocialFeed({ isLight }: SocialFeedProps) {
                 <div>
                   <div className="flex items-center gap-1">
                     <span className="text-xs sm:text-sm font-bold tracking-tight">
-                      ekta.and.amit
+                      _infinite_loop & _end_of_theline
                     </span>
                     <CheckCircle2 size={13} className={`fill-current ${isLight ? 'text-rose-500' : 'text-amber-500'}`} />
                   </div>
@@ -181,7 +181,7 @@ export default function SocialFeed({ isLight }: SocialFeedProps) {
                 </div>
 
                 <span className="text-[10px] font-mono text-gray-400">
-                  Anniversary Edition
+                  Anniversary Memories
                 </span>
               </div>
 
@@ -191,7 +191,7 @@ export default function SocialFeed({ isLight }: SocialFeedProps) {
                   {post.likes} likes
                 </p>
                 <p className={`text-xs sm:text-sm leading-relaxed ${isLight ? 'text-gray-700' : 'text-gray-300'}`}>
-                  <span className="font-bold mr-1.5 text-gray-950 dark:text-white">ekta.and.amit</span>
+                  <span className="font-bold mr-1.5 text-gray-950 dark:text-white">_infinite_loop & _end_of_theline</span>
                   {post.caption}
                 </p>
               </div>
