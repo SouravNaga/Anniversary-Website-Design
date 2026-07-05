@@ -107,7 +107,7 @@ export const INITIAL_SOCIAL_POSTS: SocialPost[] = [
     likes: 31,
     isLikedByUser: false,
     caption: "Where our beautiful story began. Coffee dates, endless laughter, and butterflies in our stomachs. ☕️💖 #FirstYear #LoveStory",
-    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&auto=format&fit=crop&q=80",
+    image: "/images/memory3.jpeg",
     comments: [
       { id: "c1", author: "Anika", text: "I still remember this day! You were so nervous!", date: "2021-01-05" },
       { id: "c2", author: "Rahul", text: "The start of something legendary!", date: "2021-01-06" },
@@ -116,23 +116,47 @@ export const INITIAL_SOCIAL_POSTS: SocialPost[] = [
   },
   {
     id: "post2",
+    year: 2022,
+    likes: 56,
+    isLikedByUser: false,
+    caption: "A quiet, cozy rainy day inside, sharing hot tea and dreaming of a warm future together. ☔️🍵 #CozyDays #UsAgainstTheWorld",
+    image: "/images/memory2.jpeg",
+    comments: [
+      { id: "c2-1", author: "Joy", text: "Major couple goals right here!", date: "2022-11-12" },
+      { id: "c2-2", author: "Pooja", text: "Raining outside, but warm inside! So cute.", date: "2022-11-13" }
+    ]
+  },
+  {
+    id: "post3",
     year: 2023,
     likes: 84,
     isLikedByUser: false,
     caption: "Shared sunsets and ocean breezes. There's nobody else I'd rather explore the world with. 🌊⛵️ #AdventurePartners #ForeverLove",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&auto=format&fit=crop&q=80",
+    image: "/images/memory4.jpeg",
     comments: [
       { id: "c4", author: "Sneha", text: "Breathtaking click! You two look adorable.", date: "2023-08-15" },
       { id: "c5", author: "Amit's Mom", text: "So beautiful. God bless you both.", date: "2023-08-16" }
     ]
   },
   {
-    id: "post3",
+    id: "post4",
+    year: 2024,
+    likes: 98,
+    isLikedByUser: false,
+    caption: "Dancing on the empty streets under the romantic yellow glow of the city lights. 💃🕺✨ #SpontaneousMoments #MidnightDance",
+    image: "/images/memory5.jpeg",
+    comments: [
+      { id: "c4-1", author: "Debasish", text: "Is this a movie scene? Simply gorgeous!", date: "2024-04-10" },
+      { id: "c4-2", author: "Mimi", text: "I want a photoshoot like this too! 😍", date: "2024-04-11" }
+    ]
+  },
+  {
+    id: "post5",
     year: 2026,
     likes: 120,
     isLikedByUser: false,
     caption: "To the future and beyond! Celebrating 5 years of our union, and I would still choose you in every lifetime. Happy 5th Anniversary! ♾️❤️ #AnniversaryCelebration #HalfDecade",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&auto=format&fit=crop&q=80",
+    image: "/images/sample2022_5.jpeg",
     comments: [
       { id: "c6", author: "Riya", text: "Happy 5 Years! stay happy forever!", date: "2026-07-01" },
       { id: "c7", author: "Sourav", text: "Congratulations on the milestone guys! 🎉", date: "2026-07-02" }
@@ -168,7 +192,7 @@ export const ROMANCE_REELS = [
   {
     id: "reel1",
     title: "Sweet Sunset Memories",
-    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-holding-hands-of-couple-walking-at-sunset-41712-large.mp4",
+    videoUrl: "/videos/beach_2.mp4",
     poster: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=300"
   },
   {
@@ -202,18 +226,18 @@ export const MUSIC_PLAYLIST = [
     id: "track1",
     title: "Soft Lofi Romance",
     artist: "Acoustic Whispers",
-    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    url: "/music/tum hi.mp3"
   },
   {
     id: "track2",
     title: "Paris Rain Kiss",
     artist: "Melodic Piano Solo",
-    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+    url: "/music/music1.mp3"
   },
   {
     id: "track3",
     title: "Midnight Café Jazz",
     artist: "The Smooth Trio",
-    url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+    url: "/music/music2.mp3"
   }
 ];

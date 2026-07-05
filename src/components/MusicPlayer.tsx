@@ -31,6 +31,55 @@ export default function MusicPlayer({ isLight }: MusicPlayerProps) {
     }
   }, [trackIndex]);
 
+  // Autoplay handler on initial load or first interaction
+  useEffect(() => {
+    let playOnInteraction: () => void;
+    
+    const attemptPlay = () => {
+      if (audioRef.current) {
+        audioRef.current.play()
+          .then(() => {
+            setIsPlaying(true);
+            cleanup();
+          })
+          .catch(err => {
+            console.log('Autoplay prevented on mount, waiting for user interaction:', err);
+          });
+      }
+    };
+
+    const cleanup = () => {
+      window.removeEventListener('click', playOnInteraction);
+      window.removeEventListener('touchstart', playOnInteraction);
+      window.removeEventListener('keydown', playOnInteraction);
+    };
+
+    playOnInteraction = () => {
+      if (audioRef.current) {
+        audioRef.current.play()
+          .then(() => {
+            setIsPlaying(true);
+            cleanup();
+          })
+          .catch(err => {
+            console.log('Play on interaction failed:', err);
+          });
+      }
+    };
+
+    // Try playing immediately
+    attemptPlay();
+
+    // Set up listeners for interaction (any click/touch/keydown on the page)
+    window.addEventListener('click', playOnInteraction);
+    window.addEventListener('touchstart', playOnInteraction);
+    window.addEventListener('keydown', playOnInteraction);
+
+    return () => {
+      cleanup();
+    };
+  }, []);
+
   const handlePlayPause = () => {
     if (!audioRef.current) return;
 

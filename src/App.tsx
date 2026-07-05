@@ -33,8 +33,8 @@ import ZipExporter from './components/ZipExporter';
 
 // Default Initial Data
 const DEFAULT_CONFIG: LoveConfig = {
-  partner1: 'Amit',
-  partner2: 'Ekta',
+  partner1: 'Sourav',
+  partner2: 'Atri',
   anniversaryDate: '2021-07-04', // 5 Years Anniversary in July 2026!
 };
 
@@ -104,7 +104,7 @@ export default function App() {
     { id: 'poem-section', label: 'Poem AI', icon: Sparkles },
     { id: 'harmony-section', label: 'Harmony Matrix', icon: Wand },
     { id: 'guestbook-section', label: 'Wishes', icon: Heart },
-    { id: 'exporter-section', label: 'Source Pack', icon: Download },
+    // { id: 'exporter-section', label: 'Source Pack', icon: Download },
   ];
 
   return (
@@ -249,10 +249,10 @@ export default function App() {
         {/* H. Guestbook Wishes Submission & Scrolling timeline */}
         <Guestbook isLight={isLight} />
 
-        {/* I. ZIP Download / Backup Section */}
+        {/* I. ZIP Download / Backup Section
         <section id="exporter-section" className="py-12 border-t border-rose-100/10 scroll-mt-20">
           <ZipExporter />
-        </section>
+        </section> */}
 
       </main>
 
