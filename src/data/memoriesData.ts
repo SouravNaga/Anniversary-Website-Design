@@ -163,6 +163,30 @@ export const INITIAL_SOCIAL_POSTS: SocialPost[] = [
       { id: "c6", author: "Riya", text: "Happy 5 Years! stay happy forever!", date: "2026-07-01" },
       { id: "c7", author: "Sourav", text: "Congratulations on the milestone guys! 🎉", date: "2026-07-02" }
     ]
+  },
+  {
+    id: "post6",
+    year: 2026,
+    likes: 120,
+    isLikedByUser: false,
+    caption: "To the future and beyond! Celebrating 5 years of our union, and I would still choose you in every lifetime. Happy 5th Anniversary! ♾️❤️ #AnniversaryCelebration #HalfDecade",
+    image: "/images/memory1.jpeg",
+    comments: [
+      { id: "c6", author: "Riya", text: "Happy 5 Years! stay happy forever!", date: "2026-07-01" },
+      { id: "c7", author: "Sourav", text: "Congratulations on the milestone guys! 🎉", date: "2026-07-02" }
+    ]
+  },
+  {
+    id: "post7",
+    year: 2026,
+    likes: 120,
+    isLikedByUser: false,
+    caption: "To the future and beyond! Celebrating 5 years of our union, and I would still choose you in every lifetime. Happy 5th Anniversary! ♾️❤️ #AnniversaryCelebration #HalfDecade",
+    image: "/images/memory10.jpeg",
+    comments: [
+      { id: "c6", author: "Riya", text: "Happy 5 Years! stay happy forever!", date: "2026-07-01" },
+      { id: "c7", author: "Sourav", text: "Congratulations on the milestone guys! 🎉", date: "2026-07-02" }
+    ]
   }
 ];
 
@@ -185,7 +209,7 @@ export const INITIAL_GUESTBOOK_WISHES: GuestbookWish[] = [
     id: "w3",
     name: "Dr. Alok Sharma",
     relation: "Family",
-    message: "Wishing you both a blessed 5th marriage anniversary. May your love grow stronger with each passing day and your home continue to overflow with laughter and blessings.",
+    message: "Wishing you both a blessed 5th love anniversary. May your love grow stronger with each passing day and your home continue to overflow with laughter and blessings.",
     date: "2026-07-02"
   }
 ];
@@ -224,6 +248,12 @@ export const ROMANCE_REELS = [
 ];
 
 export const MUSIC_PLAYLIST = [
+  {
+    id: "track6",
+    title: "Soft Lofi Romance",
+    artist: "Acoustic Whispers",
+    url: "/music/music6.mp3"
+  },
   {
     id: "track4",
     title: "Soft Lofi Romance",

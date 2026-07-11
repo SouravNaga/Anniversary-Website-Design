@@ -11,7 +11,8 @@ import {
   MessageCircle,
   Play,
   Share2,
-  Wand
+  Wand,
+  Smile
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -25,6 +26,7 @@ import AnniversaryCounter from './components/AnniversaryCounter';
 import JourneyTimeline from './components/JourneyTimeline';
 import SocialFeed from './components/SocialFeed';
 import ReelGallery from './components/ReelGallery';
+import BubuDuduAnimation from './components/BubuDuduAnimation';
 import LovePoemGenerator from './components/LovePoemGenerator';
 import ZodiacSandbox from './components/ZodiacSandbox';
 import Guestbook from './components/Guestbook';
@@ -93,7 +95,6 @@ export default function App() {
 
   const handleUnlock = () => {
     setIsUnlocked(true);
-    // Play sweet tick or focus on main
   };
 
   // Nav items list
@@ -101,10 +102,10 @@ export default function App() {
     { id: 'timeline-section', label: 'Timeline', icon: Calendar },
     { id: 'social-section', label: 'Social Feed', icon: MessageCircle },
     { id: 'theater-section', label: 'Cinema Room', icon: Play },
+    { id: 'bubu-Puchu-section', label: 'Bubu & Puchu', icon: Smile },
     { id: 'poem-section', label: 'Poem AI', icon: Sparkles },
     { id: 'harmony-section', label: 'Harmony Matrix', icon: Wand },
     { id: 'guestbook-section', label: 'Wishes', icon: Heart },
-    // { id: 'exporter-section', label: 'Source Pack', icon: Download },
   ];
 
   return (
@@ -240,6 +241,9 @@ export default function App() {
         {/* E. Cinema Room Video Loop Reel Gallery */}
         <ReelGallery isLight={isLight} />
 
+        {/* E2. Bubu & Puchu Cute Love Animation Page */}
+        <BubuDuduAnimation isLight={isLight} />
+
         {/* F. AI Love Poem & Wish Generator */}
         <LovePoemGenerator isLight={isLight} defaultSender={config.partner1} defaultRecipient={config.partner2} />
 
@@ -248,11 +252,6 @@ export default function App() {
 
         {/* H. Guestbook Wishes Submission & Scrolling timeline */}
         <Guestbook isLight={isLight} />
-
-        {/* I. ZIP Download / Backup Section
-        <section id="exporter-section" className="py-12 border-t border-rose-100/10 scroll-mt-20">
-          <ZipExporter />
-        </section> */}
 
       </main>
 

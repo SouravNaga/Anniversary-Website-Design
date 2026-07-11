@@ -24,7 +24,7 @@ export default function UnlockScreen({ onUnlock }: UnlockScreenProps) {
         >
           <span className="text-amber-500 font-mono text-[10px] sm:text-xs tracking-[0.4em] uppercase">OUR STORY</span>
           <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl text-white font-semibold">
-            Ekta & Amit
+            Sourav & Atri
           </h2>
           <p className="text-amber-500/60 font-mono text-xs tracking-widest uppercase mt-1">
             Since 2021

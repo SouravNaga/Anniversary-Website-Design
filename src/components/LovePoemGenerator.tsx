@@ -132,7 +132,7 @@ export default function LovePoemGenerator({ isLight, defaultSender, defaultRecip
                 }`}
               >
                 <Languages size={14} />
-                BENGALI (বাংলা) 🇧🇩
+                BENGALI (বাংলা) INDIA
               </button>
               <button
                 type="button"
